@@ -1,0 +1,17 @@
+
+ul li {
+  list-style: none;
+  float: left;
+}
+ul li a {
+  padding: 15px;
+  text-decoration: none;
+  color: #FFF;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: blue;
+}
+ul li:hover a {
+  color: blue;
+  background-color: yellow;
+}

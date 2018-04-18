@@ -1,0 +1,20 @@
+<h1>
+    Cars page
+</h1>
+<hr>
+<div class="row">
+    <div class="col-sm-12">
+        <a [routerLink]="['/cars', 'create']" class="btn btn-primary">Create car</a>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-6">
+        <app-cars-list></app-cars-list>
+    </div>
+    <div class="col-sm-6">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+

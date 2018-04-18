@@ -1,0 +1,15 @@
+<h1>
+    Car delete
+</h1>
+
+<p><strong>Brand:</strong>{{car?.brand}}</p>
+<p><strong>Model:</strong>{{car?.model}}</p>
+<p><strong>Year:</strong>{{car?.year}}</p>
+
+
+<form *ngIf="car" (ngSubmit)="deleteCar()">
+    <input type="hidden" [(ngModel)]="car.id" name="id">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+
+<a [routerLink]="['/cars']">Назад</a>

@@ -1,0 +1,5 @@
+<div class="alert alert-dark" role="alert" *ngFor="let car of cars; let id = index">
+  <a [routerLink]="['/cars', car.id]"> {{ car.brand}} </a>
+  <a [routerLink]="['/cars', car.id, 'edit']" class="btn btn-warning">Edit</a>
+  <a [routerLink]="['/cars', car.id, 'delete']" class="btn btn-danger">Delete</a>
+</div>
